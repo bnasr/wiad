@@ -8,13 +8,13 @@
 # Most recent release: https://github.com/bnasr/wiad
 #######################################################################
 
-library(wiad)
-library(data.table)
-library(DT)
-library(plotly)
-library(shiny)
-library(shinyjs)
-library(shinythemes)
+library (wiad)
+library (data.table)
+library (DT)
+library (plotly)
+library (shiny)
+library (shinyjs)
+library (shinythemes)
 
 # load as a fluid page
 fluidPage (
@@ -199,10 +199,8 @@ fluidPage (
                 hr (),
                 
                 # the user is asked to confirm the metadata each time for verification purposes
-                radioButtons (inputId = 'confirmMeta', 
-                              label = 'Metadata', 
-                              choices  = list ('Not Confirmed', 'Confirmed'),
-                              selected = 'Not Confirmed',
+                actionButton (inputId = 'confirmMeta', 
+                              label = 'Confirm metadata', 
                               inline = TRUE)
                 
               ),
